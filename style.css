@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5FC;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 80px;
+    margin: 20px;
+}
+
+button {
+    border-radius: 12px;
+    margin: 5px;
+    padding: 19px 78px;
+    background: #0A3871;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #D8DFE8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #0A3871;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.container__introducao {
+    margin: 32px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.organizacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 211px;
+}
+
+.container__informacoes {
+    width: 100%;
+    max-width: 768px;
+}
+
+.container__informacoes__textarea {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 2rem;
+    color: rgb(6, 44, 103);
+    height: 572px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+::placeholder {
+    color: #0A3871;
+    opacity: 1;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.container__acoes {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;    
+}
+
+.container__acoes__alerta {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.container__acoes__texto {
+    color: gray;
+    font-size: 0.875rem;
+}
+
+.container__resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    width: 400px;
+}
+
+.container__resultado img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container__resultado__subtexto {
+    margin: 8px 28px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
